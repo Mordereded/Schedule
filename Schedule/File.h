@@ -14,5 +14,5 @@ public:
 private:
     Node parseAttraction(const std::string& line);
 };
-#endif // !AttractionTableReader_H_
+#endif 
 
