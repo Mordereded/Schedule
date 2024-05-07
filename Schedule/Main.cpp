@@ -11,7 +11,6 @@
 #define Max_Hours (32)
 
 
-//В качестве алгоритма для решения - была использована очередь с приоритетом и предикат
 int main()
 {
     SetConsoleCP(1251);
@@ -33,8 +32,8 @@ int main()
     {
         if (hours + nodes.top().time > Max_Hours) continue;
         hours += nodes.top().time;
-        std::cout << nodes.top() << "[Оставшееся время = " << Max_Hours - hours <<
-            " : Время посищения следующего места = ";
+        std::cout << nodes.top() << "[ГЋГ±ГІГ ГўГёГҐГҐГ±Гї ГўГ°ГҐГ¬Гї = " << Max_Hours - hours <<
+            " : Г‚Г°ГҐГ¬Гї ГЇГ®Г±ГЁГ№ГҐГ­ГЁГї Г±Г«ГҐГ¤ГіГѕГ№ГҐГЈГ® Г¬ГҐГ±ГІГ  = ";
         nodes.pop();
         std::cout << nodes.top().time << "]" << "\n";
     }
